@@ -1,0 +1,16 @@
+[package]
+name = "rust-outbox"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aws-config = "1.5.9"
+aws-sdk-sqs = "1.47.0"
+mysql = "25.0.1"
+rustc-serialize = "0.3.25"
+tokio = {  version = "1.41.0", features = ["macros", 'rt-multi-thread'] }
+config = "0.14.1"
+
+[[bin]]
+name = "rust-outbox"
+path = "main.rs"
